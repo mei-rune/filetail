@@ -7,6 +7,7 @@ destination:
   protocol: udp
 exclude_patterns:
   - don't log on me
-debug_log_file: filetail.log
+# 可以是下列值中任意一个： emerg,alert,crit,err,warn,notice,info,debug
 severity: alert
+# 可以是下列值中任意一个： kern,user,mail,daemon,auth,syslog,lpr,news,uucp,cron,authpriv,ftp,ntp,audit,alert,at,local0,local1~7
 facility: kern
