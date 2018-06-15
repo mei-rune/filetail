@@ -37,13 +37,13 @@ func (imr *InMemoryRegistry) Exists(worker string) bool {
 func (imr *InMemoryRegistry) Add(worker string) {
 	imr.mu.Lock()
 	defer imr.mu.Unlock()
-	log.Tracef("Adding %s to worker registry", worker)
+	logTracef("Adding %s to worker registry", worker)
 	imr.workers[worker] = true
 }
 
 func (imr *InMemoryRegistry) Remove(worker string) {
 	imr.mu.Lock()
 	defer imr.mu.Unlock()
-	log.Tracef("Removing %s from worker registry", worker)
+	logTracef("Removing %s from worker registry", worker)
 	delete(imr.workers, worker)
 }

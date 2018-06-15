@@ -1,6 +1,6 @@
 [Unit]
 Description=remote_syslog2
-Documentation=https://github.com/papertrail/remote_syslog2
+Documentation=https://github.com/runner-mei/filetail
 After=network-online.target
 
 [Service]

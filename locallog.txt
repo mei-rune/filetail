@@ -1,0 +1,541 @@
+locallog.txt
+aaaa
+aaa
+l;jskdjdf
+sdfasfsdaf
+newline
+    sfdasdfsadf
+    2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+顶戴ssds
+
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+顶戴ssds
+
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+  
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+  
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+  
+2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+  
+
+  2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+  
+  2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [com.typesafe.akka.akka-actor_2.11-2.3.4.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.11.1.jar:na]
+  
+  2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:7
+
+  2018-06-15 11:43:15,625 - [ERROR] - from application in play-akka.actor.default-dispatcher-367 
+Failed to get value of metric[Win32_PerfRawData_Tcpip_NBTConnection] for mo[service_host][22]
+java.lang.RuntimeException: internal error:
+    Win32_PerfRawData_Tcpip_NBTConnection_wmi_windows: 'wmi' is required.
+    Win32_PerfRawData_Tcpip_NBTConnection_winrm_windows: wbem is missing.
+    'wmi' is required.
+    wbem is missing.
+  at lib.rest.Base$class.sendRequest(Base.scala:137) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Base$class.getJSON(Base.scala:27) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getJSON(Metrics.scala:12) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at lib.rest.Metrics$.getMetricValue(Metrics.scala:36) ~[tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.getValueJson(ServiceHelper.scala:1907) [tpt_web.tpt_web-2.3.jar:2.3]
+  at helpers.ServiceHelper$.resolveWindowsFlux(ServiceHelper.scala:937) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:73) [tpt_web.tpt_web-2.3.jar:2.3]
+  at controllers.HostIntegrationController$$anonfun$getWindowsInfo$1.apply(HostIntegrationController.scala:63) [tpt_web.tpt_web-2.3.jar:2.3]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:433) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anonfun$apply$16.apply(Action.scala:432) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:556) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$.invokeBlock(Action.scala:555) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.ActionBuilder$$anon$1.apply(Action.scala:518) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.11.1.jar:na]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [com.typesafe.play.play_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:705) [com.typesafe.play.play-iteratees_2.11-2.3.9.jar:2.3.9]
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:7
+  asdfasdfsdf
+  
+  at play.api.libs.iteratee.DoneIteratee$$anonfun$mapM$2.apply(Iteratee.scala:7
+  asdfasdfsdf
+  

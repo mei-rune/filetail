@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/mitchellh/mapstructure"
-	"github.com/papertrail/remote_syslog2/papertrail"
-	"github.com/papertrail/remote_syslog2/syslog"
-	"github.com/papertrail/remote_syslog2/utils"
+	"github.com/runner-mei/filetail/papertrail"
+	"github.com/runner-mei/filetail/syslog"
+	"github.com/runner-mei/filetail/utils"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 )
@@ -30,7 +30,7 @@ var (
 )
 
 const (
-	envPrefix         = "remote_syslog"
+	envPrefix         = "filetail"
 	defaultConfigFile = "/etc/log_files.yml"
 )
 
@@ -368,12 +368,12 @@ func decodeHook(from reflect.Type, to reflect.Type, data interface{}) (interface
 
 func getPidFile() string {
 	pidFiles := []string{
-		"/var/run/remote_syslog.pid",
-		os.Getenv("HOME") + "/run/remote_syslog.pid",
-		os.Getenv("HOME") + "/tmp/remote_syslog.pid",
-		os.Getenv("HOME") + "/remote_syslog.pid",
-		os.TempDir() + "/remote_syslog.pid",
-		os.Getenv("TMPDIR") + "/remote_syslog.pid",
+		"/var/run/filetail.pid",
+		os.Getenv("HOME") + "/run/filetail.pid",
+		os.Getenv("HOME") + "/tmp/filetail.pid",
+		os.Getenv("HOME") + "/filetail.pid",
+		os.TempDir() + "/filetail.pid",
+		os.Getenv("TMPDIR") + "/filetail.pid",
 	}
 
 	for _, f := range pidFiles {
@@ -392,7 +392,7 @@ func getPidFile() string {
 		return f
 	}
 
-	return "/tmp/remote_syslog.pid"
+	return "/tmp/filetail.pid"
 }
 
 func usage() {
