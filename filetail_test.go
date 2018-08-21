@@ -286,13 +286,13 @@ func (tr *testRegistry) Exists(worker string) bool {
 func (tr *testRegistry) Add(worker string) {
 	tr.mu.Lock()
 	defer tr.mu.Unlock()
-	log.Tracef("Adding %s to worker registry", worker)
+	logTracef("Adding %s to worker registry", worker)
 	tr.workers[worker] += 1
 }
 
 func (tr *testRegistry) Remove(worker string) {
 	tr.mu.Lock()
 	defer tr.mu.Unlock()
-	log.Tracef("Removing %s from worker registry", worker)
+	logTracef("Removing %s from worker registry", worker)
 	delete(tr.workers, worker)
 }
