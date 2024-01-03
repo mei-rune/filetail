@@ -190,7 +190,6 @@ func (s *Server) tailFiles() {
 	}
 }
 
-//
 func (s *Server) globFiles(firstPass bool) {
 	logDebugf("Evaluating file globs")
 	for _, glob := range s.config.Files {
